@@ -43,7 +43,6 @@
     <!-- WYSIWYG STUFF -->
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href="../css/froala_editor.min.css" rel="stylesheet" type="text/css">
-    <link href="../css/froala_style.min.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -95,9 +94,9 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <section id="editor">
-      <div id='edit' style="margin-top: 30px;">
-
+    
+<section id="editor">
+      <div id='edit' style="">
     <!-- Header -->
     <header>
         <style>
@@ -109,9 +108,13 @@
                 <div class="team-member">
                         <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAMyAAAAJDA4MmI1MWE5LTAyODQtNGJhZC1hNjlhLTE5NDFlMThiZGQ4Yw.jpg" class="img-responsive img-circle" alt="Zach Boyette" style="height:160px; width:160px;">
                     </div>
+                    <section id="editor">
+      <div id='edit' style="">
                 <div id="intro-big-name" class="intro-heading">Zach Boyette</div>
                 <div class="intro-lead-in">HR Business Account Manager - Procter &amp; Gamble</div>
                 <div class="intro-lead-in">Co-Founder - Recsy</div>
+            </div>
+        </section>
             </div>
         </div>
     </header>
@@ -669,13 +672,8 @@
     $.Editable.DEFAULTS.buttons.push('inlineStyle');
 
     $(function(){
-      $('#edit').editable({inlineMode: false})
+      $('#edit').editable({inlineMode: true})
     });
-  </script>
-  <script>
-      $(function(){
-        $('#edit').editable({})
-      });
   </script>
 
   </div>
